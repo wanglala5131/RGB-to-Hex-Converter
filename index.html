@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGB to Hex Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="converter d-flex justify-content-center">
+    <div id="sliders">
+      <div class="red-slider d-flex align-items-center">
+        <span>R</span>
+        <input type="range" min="0" max="255" value="0" class="slider" id="red-range">
+        <span class="red-value">0</span>
+      </div>
+      <div class="green-slider d-flex align-items-center">
+        <span>G</span>
+        <input type="range" min="0" max="255" value="0" class="slider" id="green-range">
+        <span class="green-value">0</span>
+      </div>
+      <div class="blue-slider d-flex align-items-center">
+        <span>B</span>
+        <input type="range" min="0" max="255" value="0" class="slider" id="blue-range">
+        <span class="blue-value">0</span>
+      </div>
+      <div class="hex">
+        <p class="text-center">#000000</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

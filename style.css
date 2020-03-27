@@ -1,0 +1,66 @@
+/*global*/
+body {
+  background-color: #000000;
+}
+.converter {
+  margin-top: 100px;
+}
+/*slider*/
+.slider {
+  width: 150px;  /*此處改變slider的長度*/
+  margin: 15px;
+}
+.slider {
+  -webkit-appearance: none;
+  height:20px;
+  outline: none;      /* 避免點選會有藍線或虛線 */
+  background: transparent;
+}
+
+      /*滑動鈕*/
+.slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+  width: 15px;
+  height: 15px;
+  background: #eee;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  bottom: 3.5px;        /*移到中間*/
+}
+    /*滑動長條*/
+.slider::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  height: 8px;
+}
+   /*span*/
+.red-slider span, .green-slider span, .blue-slider span {
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.red-slider span:last-child, .green-slider span:last-child, .blue-slider span:last-child {
+  width: 50px;
+  text-align: center;
+}
+.red-slider span {
+  background-color: #ff0000;
+}
+.green-slider span {
+  background-color: #00ff00;
+}
+.blue-slider span {
+  background-color: #0000ff;
+}
+/*hex*/
+.hex p {
+  padding-bottom: 8px;  /*看起來垂直置中*/
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
